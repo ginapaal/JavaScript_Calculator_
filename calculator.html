@@ -3,53 +3,44 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="javascript/calculator.js"></script>
     <title> JavaScript Calculator </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <h1> Simple JavaScript Calculator </h1>
     <div class="calculator">
-        <div class="display">
-            <input>
-        </div>
         <div class="digits">
             <table>
                 <tr>
-                    <td><button> 7 </button></td>
-                    <td><button> 8 </button></td>
-                    <td><button> 9 </button></td>
+                    <td colspan="4"><input type="text" id="input"></td>
+                    <td><button colspan='1' class="btn" onclick="reset()"> C </button></td>
                 </tr>
                 <tr>
-                    <td><button> 4 </button></td>
-                    <td><button> 5 </button></td>
-                    <td><button> 6 </button></td>
+                    <td><button class="btn" onclick="insertDigit(7)"> 7 </button></td>
+                    <td><button class="btn" onclick="insertDigit(8)"> 8 </button></td>
+                    <td><button class="btn" onclick="insertDigit(9)"> 9 </button></td>
+                    <td><button class="btn" onclick="insertDigit('+')"> + </button></td>
                 </tr>
                 <tr>
-                    <td><button> 1 </button></td>
-                    <td><button> 2 </button></td>
-                    <td><button> 3 </button></td>
+                    <td><button class="btn" onclick="insertDigit(4)"> 4 </button></td>
+                    <td><button class="btn" onclick="insertDigit(5)"> 5 </button></td>
+                    <td><button class="btn" onclick="insertDigit(6)"> 6 </button></td>
+                    <td><button class="btn" onclick="insertDigit('-')"> - </button></td>
                 </tr>
                 <tr>
-                    <td><button> 0 </button></td>
-                    <td><button> . </button></td>
-                    <td><button> = </button></td>
-                </tr>
-            </table>
-        </div>
-        <div class="operations">
-            <table>
-                <tr>
-                    <td><button> + </button></td>
-
-                    <td><button> - </button></td>
+                    <td><button class="btn" onclick="insertDigit(1)"> 1 </button></td>
+                    <td><button class="btn" onclick="insertDigit(2)"> 2 </button></td>
+                    <td><button class="btn" onclick="insertDigit(3)"> 3 </button></td>
+                    <td><button class="btn" onclick="insertDigit('*')"> * </button></td>
                 </tr>
                 <tr>
-                    <td><button> * </button></td>
-                    <td><button> / </button></td>
-                </tr>
-                <tr>
-                    <td><button> C </button></td>
+                    <td><button class="btn" onclick="insertDigit(0)"> 0 </button></td>
+                    <td><button class="btn" onclick="insertDigit('.')"> . </button></td>
+                    <td><button class="btn" onclick="insertDigit('=')"> = </button></td>
+                    <td><button class="btn" onclick="insertDigit('/')"> / </button></td>
                 </tr>
             </table>
         </div>
