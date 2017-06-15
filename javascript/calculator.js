@@ -12,7 +12,7 @@ function doTheMath() {
 
     var addPos = inputDatas.indexOf("+");
     var subPos = inputDatas.indexOf("-");
-    var multiplyPos = inputDatas.indexOf("*");
+    var multiPos = inputDatas.indexOf("*");
     var divPos = inputDatas.indexOf("/");
 
     if (addPos >= 0) {
@@ -24,8 +24,22 @@ function doTheMath() {
 
     else if (subPos >= 0) {
         var x = inputDatas.substring(0, subPos);
-        var y = inputDatas.slice(subPos + 1, inputLen)
+        var y = inputDatas.slice(subPos + 1, inputLen);
         var result = parseFloat(x) - parseFloat(y);
+        document.getElementById("input").value = result;
+    }
+
+    else if (multiPos >= 0) {
+        var x = inputDatas.substring(0, multiPos);
+        var y = inputDatas.slice(multiPos + 1, inputLen);
+        var result = parseFloat(x) * parseFloat(y);
+        document.getElementById("input").value = result;
+    }
+
+    else if (divPos >= 0) {
+        var x = inputDatas.substring(0, divPos);
+        var y = inputDatas.slice(divPos + 1, inputLen);
+        var result = parseFloat(x) / parseFloat(y);
         document.getElementById("input").value = result;
     }
 }
