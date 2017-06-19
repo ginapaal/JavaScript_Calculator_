@@ -14,6 +14,7 @@ function doTheMath() {
     var subPos = inputDatas.indexOf("-");
     var multiPos = inputDatas.indexOf("*");
     var divPos = inputDatas.indexOf("/");
+    var percPos = inputDatas.indexOf("%");
 
     if (addPos >= 0) {
         var x = inputDatas.substring(0, addPos);
@@ -42,4 +43,12 @@ function doTheMath() {
         var result = parseFloat(x) / parseFloat(y);
         document.getElementById("input").value = result;
     }
+
+    else if (percPos >= 0) {
+        var x = inputDatas.substring(0, percPos);
+        var y = inputDatas.slice(percPos + 1, inputLen);
+        var result = parseFloat(x) * (parseFloat(y) * 0.01);
+        document.getElementById("input").value = result;
+    }
 }
+
