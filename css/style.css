@@ -1,10 +1,15 @@
 h1 {
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
 }
 
 body {
-        background-color: whitesmoke;
+        background-image: url("pikachu.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
 }
 
 div.digits {
@@ -17,7 +22,8 @@ div.digits {
 div.calculator {
     width: 280px;
     height: 170px;
-    background: lightblue;
+    background: #EECC4A;
+    margin-left: 500px;
 }
 
 div.operations {
@@ -42,10 +48,9 @@ div.operations {
    font-size: 16px;
    font-family: Helvetica,Arial,Sans-Serif;
    text-decoration: none;
-   vertical-align: middle;
 }
 
-.input {
+#input {
     border-width: 6px;
     border-color: snow;
     border-style: groove;
@@ -53,3 +58,6 @@ div.operations {
     text-align: right;
 }
 
+table {
+    padding-top: 10px;
+}
