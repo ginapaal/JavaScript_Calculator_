@@ -20,9 +20,8 @@ div.digits {
 }
 
 div.calculator {
-    width: 280px;
-    height: 170px;
-    background: #EECC4A;
+    width: 300px;
+    height: 220px;
     margin-left: 500px;
 }
 
@@ -31,28 +30,32 @@ div.operations {
 }
 
 .btn {
-   border-top: 1px solid #8a8a8a;
-   background: #808080;
-   background: -webkit-gradient(linear, left top, left bottom, from(#3d3d3d), to(#808080));
-   background: -webkit-linear-gradient(top, #3d3d3d, #808080);
-   background: -moz-linear-gradient(top, #3d3d3d, #808080);
-   background: -ms-linear-gradient(top, #3d3d3d, #808080);
-   background: -o-linear-gradient(top, #3d3d3d, #808080);
-   padding: 1px 5px;
-   border-radius: 40px;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   transition: background-color 0.3s ease 0.1s;
-   color: #ffffff;
-   font-size: 16px;
-   font-family: Helvetica,Arial,Sans-Serif;
-   text-decoration: none;
+    color: white;
+    background-color: #E0441C;
+    width: 3em;
+    height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: 2px 2px 5px black;
+    border-color: black;
+}
+
+.bigger-btn {
+    color: white;
+    background-color: #E0441C;
+    width: 3em;
+    height: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: 2px 2px 5px black;
+    border-color: black;
 }
 
 #input {
-    border-width: 6px;
-    border-color: snow;
+    border-width: 3px;
+    border-color: black;
     border-style: groove;
     font: 20px Helvetica;
     text-align: right;

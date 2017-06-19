@@ -16,14 +16,13 @@
             <table>
                 <tr>
                     <td colspan="4"><input type="text" id="input"></td>
-                    <td><button colspan='1' class="btn" onclick="reset()"> C </button></td>
+                    <td rowspan="3"><button class="bigger-btn" onclick="reset()"> C </button></td>
                 </tr>
                 <tr>
                     <td><button class="btn" onclick="insertDigit(7)"> 7 </button></td>
                     <td><button class="btn" onclick="insertDigit(8)"> 8 </button></td>
                     <td><button class="btn" onclick="insertDigit(9)"> 9 </button></td>
                     <td><button class="btn" onclick="insertDigit('+')"> + </button></td>
-                    <td><button class="btn" onclick="insertDigit('%')"> % </button></td>
                 </tr>
                 <tr>
                     <td><button class="btn" onclick="insertDigit(4)"> 4 </button></td>
@@ -36,11 +35,12 @@
                     <td><button class="btn" onclick="insertDigit(2)"> 2 </button></td>
                     <td><button class="btn" onclick="insertDigit(3)"> 3 </button></td>
                     <td><button class="btn" onclick="insertDigit('*')"> * </button></td>
+                    <td rowspan="3"><button class="bigger-btn" onclick="doTheMath()"> = </button></td>
                 </tr>
                 <tr>
                     <td><button class="btn" onclick="insertDigit(0)"> 0 </button></td>
                     <td><button class="btn" onclick="insertDigit('.')"> . </button></td>
-                    <td><button class="btn" onclick="doTheMath()"> = </button></td>
+                    <td><button class="btn" onclick="insertDigit('%')"> % </button></td>
                     <td><button class="btn" onclick="insertDigit('/')"> / </button></td>
                 </tr>
             </table>
